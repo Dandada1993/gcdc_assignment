@@ -3,11 +3,11 @@
 ## **Name**: Ralph P. Goddard
 ### **Submission Date**: February 17, 2017
 
-# What contained in the Git Hub repo
+# What's contained in the Git Hub repo
 1. run_analysis.R - used to reproduce the transformations and analysis perfomed on the original dataset.
 2. README.md
 
-# Explanation of steps taken in run_analysis.README
+# Explanation of steps taken in run_analysis.R
 
 1. Load the dplyr library
 2. Assign names of test files, training files, list of activities, variable names and subjects into variables.
@@ -61,8 +61,8 @@ Variable names consist of 4 segments
 
 ### Example tidy variable names
 
-time.bodyacceleration.mean.x
-freq.angularveloctiy.mag.mean
-time.bodygyroscope.std.z
-freq.bodyacceleration.mean.y
-time.gravityacceleration.mag.std
+* time.bodyacceleration.mean.x
+* freq.angularveloctiy.mag.mean
+* time.bodygyroscope.std.z
+* freq.bodyacceleration.mean.y
+* time.gravityacceleration.mag.std
