@@ -6,6 +6,7 @@
 # What's contained in the Git Hub repo
 1. run_analysis.R - used to reproduce the transformations and analysis perfomed on the original dataset.
 2. README.md
+3. Codebook.txt
 
 # Explanation of steps taken in run_analysis.R
 
@@ -37,32 +38,3 @@
 26. A regex was used to remove a period at the end of a variable name
 27. A new data frame was created by grouping by subject and activity and then using summarise_all to calculate the mean of all variables.
 28. Output the results of step 27 to a file called "tidy_ds.txt" with row.name=FALSE
-
-# Variable names
-
-A custom function "tidy_columnnames" was used to apply the following regular expression cumulativly to the old variable names and to lower case the names
-
-| Regex        | Replacement String  |
-|--------------|---------------------|
-| ^t           | time.               |
-| ^f           | freq.               |
-| BodyAccJerk  | LinearAcceleration. |
-| BodyGyroJerk | AngularVelocity.    |
-| BodyGyro     | BodyGyroscope.      |
-| BodyAcc      | BodyAcceleration.   |
-| GravityAcc   | GravityAcceleration.|
-
-Variable names consist of 4 segments
-
-* The first segments is either "time" or "freq" to differentiate tial doman signals from frequency domain signals.
-* The second segment is one of the five measurements included in the original data set linear acceleration, angular velocity, body acceleration, gravity acceleration and body gyroscope.
-* The third segment is either "mean", "std" (standard deviation) or "mag" (magnitude)
-* The fourth segment is either "X", "Y", "Z" for 3 axials measurements and for variables where the third segment is "mag" the fourth is either "mean" or "std" (standard deviation)
-
-### Example tidy variable names
-
-* time.bodyacceleration.mean.x
-* freq.angularveloctiy.mag.mean
-* time.bodygyroscope.std.z
-* freq.bodyacceleration.mean.y
-* time.gravityacceleration.mag.std
