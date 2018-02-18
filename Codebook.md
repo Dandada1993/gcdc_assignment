@@ -168,6 +168,6 @@ Variable names consist of 4 segments
 
 # Variables explained
 
-subject - integer - valid values:  1 to 30
-activity - character - valid values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-all other variables - numeric - valid values -1 to 1 in gravitational units except for the bodygyroscope variables which are in radian/second
+* subject = The subject id an integer with valid values:  1 to 30
+* activity = The name of the activity with valid values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+* all other variables - The original measurements and calculated values normalised so valid values:  -1 to 1 in gravitational units except for the bodygyroscope variables which are in radian/second
